@@ -8,7 +8,7 @@ sudo=y
 
 # If user is part of docker group, sudo isn't necessary
 if groups $USER | grep &>/dev/null '\bdocker\b'; then
-    sudo = n
+    sudo=n
 fi
 
 if [ "${container_id}" == "" ]
